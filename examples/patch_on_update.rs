@@ -20,6 +20,7 @@ fn setup(mut commands: Commands) {
 
 #[hot]
 fn configure_ui(ui: Single<Entity, With<Ui>>, mut commands: Commands) {
+    info!("HOT RELOADING");
     commands.entity(*ui).despawn_related::<Children>().insert((
         Node {
             // You can change the `Node` however you want at runtime

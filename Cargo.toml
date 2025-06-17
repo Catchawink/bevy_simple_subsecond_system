@@ -23,7 +23,7 @@ bevy_platform = { git = "https://github.com/empathic-ai/bevy.git", branch = "ref
 bevy_ecs_macros = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
 bevy_reflect = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
 bevy_utils = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
-bevy_internal = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", features = ["track_location"] }
+bevy_internal = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", default-features = false, features = ["track_location"] }
 dioxus-devtools = "0.7.0-alpha.1"
 bevy_simple_subsecond_system_macros = { path = "macros", version = "0.1.9" }
 crossbeam-channel = "0.5.15"
@@ -44,7 +44,7 @@ features = [
 ]
 
 [dev-dependencies]
-bevy = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", features = ["bevy_ui_debug", "track_location"] }
+bevy = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", default-features = false, features = ["bevy_ui_debug", "track_location"] }
 
 [lints.clippy]
 # Bevy supplies arguments to systems via dependency injection, so it's natural for systems to
