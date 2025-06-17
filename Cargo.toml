@@ -15,15 +15,15 @@ readme = "readme.md"
 categories = ["game-development"]
 
 [dependencies]
-bevy_ecs = { version = "0.16.0" }
-bevy_log = { version = "0.16.0" }
-bevy_app = { version = "0.16.0" }
-bevy_derive = { version = "0.16.0" }
-bevy_platform = { version = "0.16.0" }
-bevy_ecs_macros = { version = "0.16.0" }
-bevy_reflect = { version = "0.16.0" }
-bevy_utils = { version = "0.16.0" }
-bevy_internal = { version = "0.16.0", features = ["track_location"] }
+bevy_ecs = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_log = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_app = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_derive = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_platform = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_ecs_macros = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_reflect = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_utils = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types" }
+bevy_internal = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", features = ["track_location"] }
 dioxus-devtools = "0.7.0-alpha.1"
 bevy_simple_subsecond_system_macros = { path = "macros", version = "0.1.9" }
 crossbeam-channel = "0.5.15"
@@ -44,7 +44,7 @@ features = [
 ]
 
 [dev-dependencies]
-bevy = { version = "0.16.0", features = ["bevy_ui_debug", "track_location"] }
+bevy = { git = "https://github.com/empathic-ai/bevy.git", branch = "reflect/serializable-dynamic-types", features = ["bevy_ui_debug", "track_location"] }
 
 [lints.clippy]
 # Bevy supplies arguments to systems via dependency injection, so it's natural for systems to
